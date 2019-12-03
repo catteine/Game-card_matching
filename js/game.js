@@ -53,8 +53,16 @@ Game.matchCard = function(){
 
       val_1.element.classList.add('cleared');
       val_2.element.classList.add('cleared');
+      
+        if (that.is1PTurn) {
+          val_1.element.classList.add('win_a');
+          val_2.element.classList.add('win_a');
+        } else {
+          val_1.element.classList.add('win_b');
+          val_2.element.classList.add('win_b');
+        }
 
-      if (document.querySelectorAll('.cleared').length === 18) {
+      if (document.querySelectorAll('.cleared').length === that.maxScore) {
         setTimeout(function(){
           let player = 'A';
           if (!that.is1PTurn) {
