@@ -1,0 +1,104 @@
+body {
+  text-align: center;
+}
+.stage {
+  display: inline-block;
+  vertical-align: top;
+}
+.stage:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+.card {
+  float: left;
+  width: 150px;
+  height: 224px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background: #fff;
+  margin: 10px;
+  transition: all .5s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  background: url('../images/card_back.jpg');
+}
+.card:nth-child(6n+1) {
+  clear: both;
+}
+.card.reversed {
+  transform: rotateY(0deg);
+}
+.card.cleared {
+  cursor: default;
+  opacity: .5;
+}
+.card.win_a {
+  border-color: #f00;
+}
+.card.win_a {
+  border-color: #00f;
+}
+.card .icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  color: #fff;
+}
+.card .icon_1 {background-image: url('../images/1.jpg');}
+.card .icon_2 {background-image: url('../images/2.jpg');}
+.card .icon_3 {background-image: url('../images/3.jpg');}
+.card .icon_4 {background-image: url('../images/4.jpg');}
+.card .icon_5 {background-image: url('../images/5.jpg');}
+.card .icon_6 {background-image: url('../images/6.jpg');}
+.card .icon_7 {background-image: url('../images/7.jpg');}
+.card .icon_8 {background-image: url('../images/8.jpg');}
+.card .icon_9 {background-image: url('../images/9.jpg');}
+
+.stage_bottom {
+  width: 1000px;
+  margin: 50px auto 0;
+}
+.stage_bottom:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+.stage_bottom > div {
+  position: relative;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.stage_bottom .player {
+  font-weight: bold;
+  font-size: 20px;
+}
+.stage_bottom .score {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.stage_bottom .box_a {
+  color: #f00;
+}
+.stage_bottom .box_b {
+  color: #00f;
+}
+.this_turn:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #000;
+  content: '';
+}
