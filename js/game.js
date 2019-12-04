@@ -54,7 +54,7 @@ Game.matchCard = function(){
       let thisPlayer = that.is1PTurn ? that.players.A : that.players.B;
       let score = thisPlayer.score + 1;
       thisPlayer.score = score;
-      document.querySelector('.this_turn .score').innerHTML = score;
+      document.querySelector('.this_turn .score').textContent = score;
 
       if (that.is1PTurn) {
         val_1_El.classList.add('win_a');
