@@ -93,6 +93,9 @@ body {
 .stage_bottom .box_b {
   color: #00f;
 }
+.this_turn {
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
 .this_turn:after {
   position: absolute;
   top: 0;
