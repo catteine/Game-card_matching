@@ -1,6 +1,6 @@
 # Games-card_matching
 
-https://catteine.github.io/Games-card_matching/index.html
+https://catteine.github.io/Toy-Game-card_matching/index.html
 
 ## 카드 짝 맞추기
 플레이어 A와 B가 있고, A를 시작으로 번갈아가면서 진행.
